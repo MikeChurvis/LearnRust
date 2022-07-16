@@ -11,7 +11,7 @@ Why? Because...
 How? By...
 
 1. Reading the [Rust Programming Language Book](https://doc.rust-lang.org/book/) and reproducing all the tutorials therein.
-1. Ruilding a game with [Bevy](https://bevyengine.org).
+1. Building a game with [Bevy](https://bevyengine.org).
 1. Building a desktop app with [Tauri](https://github.com/tauri-apps/tauri).
 
 Note:
