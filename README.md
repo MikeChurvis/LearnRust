@@ -14,8 +14,5 @@ How? By...
 1. Building a game with [Bevy](https://bevyengine.org).
 1. Building a desktop app with [Tauri](https://github.com/tauri-apps/tauri).
 
-Progress Bookmarks:
-- 
-
 Note:
 > As I write this, I'm still training for a job in the Python sector of our industry. As such, this venture will be a backburner project for the foreseeable future.
