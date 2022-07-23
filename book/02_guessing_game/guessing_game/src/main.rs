@@ -28,6 +28,7 @@ fn main() {
         // Shadow the previous guess variable, this time with an immutable unsigned
         // 32 bit number. Return to the top of the loop if the input is not a number.
         // Note: .parse() relies on the type annotation to determine its output type.
+        // Note: Err(_) matches all errors regardless of content; _ is a catchall.
         let guess: u32 = match guess.trim().parse() {
             Ok(number) => number,
             Err(_) => continue,
