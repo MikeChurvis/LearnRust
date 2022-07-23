@@ -26,13 +26,16 @@ fn main() {
         // Note: .expect() is far less useful than exception handling, taught in ch09.
 
         // Shadow the previous guess variable, this time with an immutable unsigned
-        // 32 bit number. Crash the program if the input is not parsable as a number.
+        // 32 bit number. Return to the top of the loop if the input is not a number.
         // Note: .parse() relies on the type annotation to determine its output type.
-        let guess: u32 = guess.trim().parse().expect("Please type a number!");
+        let guess: u32 = match guess.trim().parse() {
+            Ok(number) => number,
+            Err(_) => continue,
+        };
 
         println!("You guessed: {guess}");
 
-        // match thing { pattern => handler, ... }
+        // match thing { pattern => expression, ... }
         match guess.cmp(&secret_number) {
             Ordering::Less => println!("Too small!"),
             Ordering::Greater => println!("Too big!"),
